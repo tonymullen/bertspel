@@ -1,0 +1,32 @@
+.bsGrid{
+  width: 65%;
+  min-width:250px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+flippy.fancy{
+  margin: 0;
+}
+
+td{
+  padding:3px;
+}
+
+body {
+  padding-top:20px;
+}
+
+.divider{
+  width: 100%;
+  background-color:lightgray;
+  padding: 5px;
+  padding-left: 10px;
+  margin-bottom:5px;
+}
+
+
+
+.panel-default > .panel-heading{
+  background-color:lightgray;
+}

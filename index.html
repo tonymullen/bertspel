@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="css/jquery.bootstrap-touchspin.css" rel="stylesheet">
+  <!--
+  <link href="bootstrap-3.3.4-dist/css/bootstrap-theme.css" rel="stylesheet"
+  -->
+  <link href="css/angular-flippy/flippy.css" rel="stylesheet">
+  <link href="css/angular-flippy/flippy-fancy.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+  <script src="js/jquery.bootstrap-touchspin.js"></script>
+  <!--
+  <script src="js/angular-flippy/flippy.js"></script>
+-->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+</head>
+
+<body class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h2>Bert Bos Puzzle</h2></div>
+<div class="panel-body bertspel" ng-app="bertspel">
+  <div ng-controller="BertSpelController">
+    <bs-grid></bs-grid>
+    <div class="divider">
+    <span>Adjust the board dimensions:</span>
+    <!--
+    <input type="number" min="3" max="12" ng-model="count">
+  -->
+      <spin value="count" min="1" max="12" step="1" />
+    </div>
+    <p>This puzzle is credited to <a href="http://www.w3.org/People/Bos/">Bert Bos</a>. I learned of it from
+    <a href="http://www.let.rug.nl/~vannoord/">Gertjan van Noord</a>. He explains it as follows:</p>
+    <p>
+    The puzzle consists of a square of n x n blue tiles. The back side of each tile is red.
+    The object of the puzzle is to turn every tile, so that the whole square becomes red.
+  </p>
+  <p>
+  However, when a tile is turned, its four neigbors also turn.
+  With every turn, therefore, five tiles swap color.
+</p>
+<accordion>
+  <accordion-group>
+  <accordion-heading>
+    Hints for solving the puzzle
+  </accordion-heading>
+  <ol>
+    <li>The order of turning tiles is immaterial.</li>
+    <li>No tile needs to be turned twice.</li>
+    <li>All solutions can be mirrored in several ways.</li>
+      <li>Selecting a top row determines all other rows.</li>
+</ol>
+  Observation 4 is due to Harry Bos and is a key insight.
+  You can view the top row as a sequence of n bits.
+  There are 2**n possibilities, which can be specified with
+  the bit patterns corresponding to the numbers
+  between 0 and 2**n-1.
+  These 2**n possibilities include all mirrored solutions.
+</accordion-group>
+</accordion>
+<!--
+    <p>Incidentally, Bert Bos is also known as one of the original developers
+      of <a href="http://www.w3.org/Style/CSS/Overview.en.html">Cascading Style Sheets</a>.</p>
+-->
+  </div>
+</div>
+</div>
+</body>
+</html>

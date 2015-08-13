@@ -1,0 +1,16 @@
+<div>
+  <table class="bsGrid">
+    <tr ng-repeat="row in colorGrid track by $index">
+      <td class="columns" ng-repeat="column in row track by $index">
+        <flippy class="fancy" ng-style="{ 'width' : width, 'height' : height }" id="{{$parent.$parent.$index}}-{{$index}}" ng-click="flip($parent.$parent.$index, $index)" flip-duration="300" timing-function="ease-in-out">
+        <flippy-front>
+          <div class='bsPanel bsPanelFront'></div>
+        </flippy-front>
+        <flippy-back>
+          <div class='bsPanel bsPanelFront'></div>
+        </flippy-back>
+      </flippy>
+      </td>
+    </tr>
+  </table>
+</div>
