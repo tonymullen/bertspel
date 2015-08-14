@@ -1,7 +1,7 @@
 ## Bert Bos Puzzle
 
 This is an Angular.js implementation of the Bert Bos Puzzle based on
-a version by [Gertjan van Noord](http://www.let.rug.nl/vannoord/).
+a now-defunct Java applet by [Gertjan van Noord](http://www.let.rug.nl/vannoord/).
 
 Here it is in action:
 
