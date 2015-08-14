@@ -1,7 +1,11 @@
 ## Bert Bos Puzzle
 
-This is an implementation of the Bert Bos Puzzle based on
+This is an Angular.js implementation of the Bert Bos Puzzle based on
 a version by [Gertjan van Noord](http://www.let.rug.nl/vannoord/).
+
+Here it is in action:
+
+[http://quiwah.com/tony/bertspel/](http://quiwah.com/tony/bertspel/)
 
 ## License
 
